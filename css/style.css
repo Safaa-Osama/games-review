@@ -81,3 +81,8 @@ overflow: hidden !important;
 .details-img{
 width: 100%;
 }
+
+.layer i{
+  top: 10px;
+  right: 10px;
+}
