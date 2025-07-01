@@ -1,6 +1,7 @@
 body{
-  background-image: url(../img/earth5.jpg);
-  background-size: ;
+  /* background-image: url(../img/earth5.jpg); */
+  /* background-size: cover ; */
+  background-color: black;
    font-family: "Pacifico", cursive;
 }
 
@@ -11,6 +12,7 @@ body{
   font-style: normal;
   width: 80%;
   margin: auto;
+  
 }
 
 .navbar ul li a{
@@ -42,6 +44,7 @@ color: white;
 .card .link_group a{
   text-decoration: none;
   color: white;
+  /* height: 20px; */
 }
 .card{
   cursor: pointer;
@@ -58,12 +61,10 @@ transform: scale(1.05);
   background-color: #0D6EFD;
   
 }
-.main{
-overflow: hidden !important;
 
+.m-t{
+  margin-top: 200px !important;
 }
-
-
 .badge{
   background-color: #0DCAF0;
   color: black;
@@ -72,17 +73,16 @@ overflow: hidden !important;
   color: white;
   width: 80%;
 }
-.w-29{
-  width: 29%;
+.details .w-29{
+  width: 29% !important;
 }
-.w-69{
-  width: 69%;
+.details .w-69{
+  width: 69% !important;
 }
 .details-img{
 width: 100%;
 }
 
 .layer i{
-  top: 10px;
-  right: 10px;
+  cursor: pointer;
 }
