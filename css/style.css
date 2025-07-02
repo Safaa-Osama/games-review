@@ -1,88 +1,152 @@
-body{
+body {
   /* background-image: url(../img/earth5.jpg); */
   /* background-size: cover ; */
-  background-color: black;
-   font-family: "Pacifico", cursive;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: "Pacifico", cursive;
 }
 
-.navbar{
+.navbar {
   background-color: #3A497B !important;
   margin-top: 200px;
   font-weight: 400;
   font-style: normal;
   width: 80%;
   margin: auto;
-  
+
 }
 
-.navbar ul li a{
+.navbar ul li a {
   color: white;
+  font-size: small;
 }
-.navbar ul li{
+
+.navbar ul li {
   padding-left: 10px;
   font-weight: 400;
   line-height: 24px;
   font-size: 16px;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   color: #098DC0;
 }
-.navbar img{
+
+.navbar-nav .nav-link.active {
+  color: #098DC0;
+
+}
+
+.navbar img {
   width: 50px;
 }
 
-.card img{
+.card img {
   height: 200px;
 }
-.title .btn_custom{
-background-color: #3A497B;
-color: white;
+
+.title .btn_custom {
+  background-color: #3A497B;
+  color: white;
 }
 
 
-.card .link_group a{
+.card .link_group a {
   text-decoration: none;
   color: white;
   /* height: 20px; */
 }
-.card{
+
+.card {
   cursor: pointer;
   transition: all .4s;
-  
-
-}
-.card:hover{
-transform: scale(1.05);
 
 
 }
-.card:hover .btn_custom{
+
+.card:hover {
+  transform: scale(1.05);
+
+
+}
+
+.card:hover .btn_custom {
   background-color: #0D6EFD;
-  
+
 }
 
-.m-t{
+.m-t {
   margin-top: 200px !important;
 }
-.badge{
+
+.badge {
   background-color: #0DCAF0;
   color: black;
 }
-.details{
+
+.details {
   color: white;
   width: 80%;
 }
-.details .w-29{
+
+.details .w-29 {
   width: 29% !important;
 }
-.details .w-69{
+
+.details .w-69 {
   width: 69% !important;
 }
-.details-img{
-width: 100%;
+
+.details-img {
+  width: 100%;
 }
 
-.layer i{
+.layer i {
   cursor: pointer;
+}
+
+
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: relative;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -1,9 +1,11 @@
+
+
 export class Ui {
   displayAllGames(data) {
     let games = "";
     for (let i = 0; i < data.length; i++) {
       games += ` <div class="main col-md-4 col-lg-3 col-sm-6">
-          <div class="card bg-black text-light h-100">
+          <div class="card bg-black text-light h-100 " data-id="${data[i].id}">
 <div class="card-body">
  <img
               src="${data[i].thumbnail}"
@@ -12,12 +14,10 @@ export class Ui {
             />
             <div class="title d-flex justify-content-between my-2">
               <h5>${data[i].title}</h5>
-              <button class="btn btn_custom px-1 py-0">Free</button>
+              <button class="btn btn_custom px-1 py-0">Free</button> 
             </div>
             <p>${data[i].short_description}</p>
 </div>
-
-           
 
 <div class="link_group d-flex justify-content-between card-footer ">
               <a href="#">${data[i].genre}</a>

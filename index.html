@@ -1,133 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Games review</title>
-    <link rel="shortcut icon" href="./img/10995222.png" type="images/x.icon" />
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games review</title>
+  <link rel="shortcut icon" href="./img/10995222.png" type="images/x.icon" />
 
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-  <body>
-    <section class="container">
-      <nav
-        class="navbar my-4 m-t navbar-expand-lg bg-body-tertiary container rounded-4 p-2 sticky-top mx-auto"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand text-uppercase text-light" href="#"
-            ><img src="./img/logo-sm.png" alt="logo" /> Game Reviews</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto text-light">
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" role="button" data-category="mmorpg">mmorpg</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" data-category="shooter">shooter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" data-category="sailing">sailing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" data-category="superhero">superhero</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" data-category="pixel">pixel</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div class="row g-4" id="rowData">
-        <div class="main col-md-4 col-lg-3 col-sm-6">
-          <div class="card p-3 bg-black text-light h-100">
-            <img
-              src="./img/il_fullxfull.5759440786_dmdj.webp"
-              alt="game's picture"
-              class="img-thumbnail"
-            />
-            <div class="title d-flex justify-content-between my-2">
-              <h5>game title</h5>
-              <button id="gameBtn" class="btn btn_custom px-1 py-0">
-                Free
-              </button>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              consectetur accusamus sint.
-            </p>
-
-            <div class="link_group d-flex justify-content-between">
-              <a href="#">MMORPS</a>
-              <a href="#">PC(windows)</a>
-            </div>
-          </div>
+<body>
+  <section class="games container">
+    <nav class="navbar my-4 m-t navbar-expand-lg bg-body-tertiary container rounded-4 p-2 sticky-top mx-auto">
+      <div class="container-fluid">
+        <a class="navbar-brand text-uppercase text-light" href="#"><img src="./img/logo-sm.png" alt="logo" /> Game
+          Reviews</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-light">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase active" role="button">mmorpg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" role="button">shooter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" role="button">sailing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" role="button">permadeath</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" role="button">superhero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" role="button">pixel</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <section class="details mx-auto m-4 position-relative d-none" >
-      <div class="row mt-5" id="gameDetails">
-        <div class="col-4">
-          <h2 class="my-2">name of game</h2>
-          <img
-            class="details-img w-100 img-thumbnail"
-            src="../img/images.jpg"
-            alt=""
-          />
-        </div>
-        <div class="col-8 p-3">
-          <h3 class="my-4">title: Lorem, ipsum dolor.</h3>
+    <div class="row g-4" id="rowData"></div>
+  </section>
 
-          <h5>
-            Category: Lorem, ipsum.<span class="badge text-bg-info>">
-              mmors</span
-            >
-          </h5>
-          <h5>
-            Platform: Lorem, ipsum<span class="badge text-bg-info>">
-              windows</span
-            >
-          </h5>
-          <h5>
-            Status: Lorem, ipsum <span class="badge text-bg-info>"> live</span>
-          </h5>
-          <p class="my-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
-            neque nulla inventore error consequuntur ullam vitae! Doloribus
-            molestiae, amet exercitationem assumenda soluta recusandae
-            cupiditate dignissimos nihil adipisci repellendus eum? Eos?
-          </p>
+  <section class="details mx-auto m-4 position-relative d-none">
+    <div class="row mt-5" id="gameDetails"></div>
 
-          <button class="btn btn-outline-warning my-3">show games</button>
-        </div>
-      </div>
-
- <div class="layer position-absolute end-0 top-0" >
+    <div class="layer position-absolute end-0 top-0">
       <i class="fa-solid fa-xmark fa-2x text-secondary" id="closeIcon"></i>
     </div>
-    </section>
+  </section>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./js/script.js"></script>
-  </body>
+ <div class="loading d-none">
+         <span class="loader"></span>
+      </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./js/script.js"></script>
+</body>
+
 </html>
